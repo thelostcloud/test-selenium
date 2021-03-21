@@ -15,8 +15,8 @@ phases:
       #artifacts:
       #  files:
       #    - recording.mp4
-  reports:
-    Selenium:
-      file-format: TESTNGXML
-      files:
-        - target/surefire-reports/testng-results.xml
+reports:
+  Selenium:
+    file-format: TESTNGXML
+    files:
+      - target/surefire-reports/testng-results.xml
