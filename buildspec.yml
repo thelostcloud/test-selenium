@@ -1,0 +1,22 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - docker pull selenium/standalone-chrome:latest
+  pre_build:
+    commands:
+      - docker run -d -p 4444:4444 -v /dev/shm:/dev/shm --name selenium selenium/standalone-chrome:latest
+  build:
+    commands:
+      - mvn clean install test
+  post_build:
+    commands:
+      #    - docker exec selenium pgrep ffmpeg > pidfile
+      #artifacts:
+      #  files:
+      #    - recording.mp4
+      #reports:
+      #  Selenium:
+      #    file-format: CucumberJson
+      #    files:
+      #      - test-integration/report.json
