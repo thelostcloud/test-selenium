@@ -36,7 +36,7 @@ public class TestOne {
         System.out.println("launching firefox browser");
 //        System.setProperty("webdriver.gecko.driver", driverPath);
 //        driver = new RemoteWebDriver(new URL("http://docker-20:4444/wd/hub"), dr);
-        driver = new RemoteWebDriver(new URL("http://host.docker.internal:4444/wd/hub"), dr);
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dr);
         driver.get(baseUrl);
         String expectedTitle = "Welcome: Mercury Tours";
         String actualTitle = driver.getTitle();
