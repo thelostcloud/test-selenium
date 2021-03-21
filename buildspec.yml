@@ -15,7 +15,7 @@ phases:
 artifacts:
   base-directory: /tmp
   files:
-    - *.png
+    - '*.png'
 reports:
   Selenium:
     file-format: TESTNGXML
