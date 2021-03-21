@@ -12,9 +12,10 @@ phases:
   post_build:
     commands:
       #    - docker exec selenium pgrep ffmpeg > pidfile
-      #artifacts:
-      #  files:
-      #    - recording.mp4
+artifacts:
+  base-directory: /tmp
+  files:
+    - *.png
 reports:
   Selenium:
     file-format: TESTNGXML

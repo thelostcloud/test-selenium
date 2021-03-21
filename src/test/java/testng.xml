@@ -1,15 +1,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Test Suite" verbose="1" >
-    <test name="Test of a Test" >
+
+    <test name="Test: Google">
         <classes>
-            <class name="TestOne" />
+            <class name="TestGoogle"/>
+        </classes>
+    </test>
+    <test name="Test: Apple">
+        <classes>
+            <class name="TestApple"/>
+        </classes>
+    </test>
+    <test name="Test: Microsoft">
+        <classes>
+            <class name="TestMicrosoft"/>
         </classes>
     </test>
 
-    <test name="Test of a second test">
-        <classes>
-            <class name="TestOne"/>
-        </classes>
-    </test>
 </suite>
